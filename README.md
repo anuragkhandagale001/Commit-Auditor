@@ -9,9 +9,11 @@ Most automation tools only spoof the Author Date. This script performs a Deep Me
 ## **🛠️ Installation**
 Clone this auditor:
 
-Bash
+```Bash
 git clone <your-repo-url>
 cd <your-repo-name>
+```
+
 Install dependencies:
 This tool requires the GitPython library.
 
