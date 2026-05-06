@@ -142,3 +142,5 @@ VERDICT: 🚨 HIGHLY FRAUDULENT (Bot Detected)
 Force Overrides: Sophisticated users can spoof both dates using advanced Git commands, though most "green square" scripts do not do this by default.
 
 Legitimate Gaps: Minor discrepancies can occur during a rebase or cherry-pick. This script uses a 1-hour threshold to avoid false positives.
+
+![Audit Result](./Screenshot 2026-05-07 014339.png)
