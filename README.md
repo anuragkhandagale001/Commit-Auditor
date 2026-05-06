@@ -17,7 +17,7 @@ This tool requires the GitPython library.
 
 Bash
 pip install GitPython
-#📖 Usage
+## 📖 Usage
 Clone the target repository you want to investigate into a local folder.
 
 Configure the path in audit.py:
