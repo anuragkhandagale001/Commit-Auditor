@@ -17,19 +17,25 @@ cd <your-repo-name>
 Install dependencies:
 This tool requires the GitPython library.
 
+```
 Bash
 pip install GitPython
+```
+
 ## 📖 Usage
 Clone the target repository you want to investigate into a local folder.
 
 Configure the path in audit.py:
 
-Python
+```Python
 repo_path = "./path-to-target-repo"
+```
+
 Run the audit:
 
-Bash
+```Bash
 python audit.py
+```
 
 ## 📊 Fraud Score Metric
 
