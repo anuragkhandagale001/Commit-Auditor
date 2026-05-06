@@ -120,7 +120,7 @@ The tool calculates a **Fraud Score** based on the ratio of suspicious commits t
 If a user used a tool like GO-GREEN, the output will look like this:
 
 
-Plaintext
+```Plaintext
 --- 🔍 STARTING DEEP AUDIT: GO-GREEN ---
 
 [🚩 FLAG] 2afa4cc | Gap: 288.5 hrs | Msg: update data.json...
@@ -136,6 +136,7 @@ Fraud Score:           94.67%
 ----------------------------------------
 VERDICT: 🚨 HIGHLY FRAUDULENT (Bot Detected)
 ========================================
+```
 
 ## ⚖️ Limitations
 Force Overrides: Sophisticated users can spoof both dates using advanced Git commands, though most "green square" scripts do not do this by default.
