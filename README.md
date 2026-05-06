@@ -28,7 +28,7 @@ Run the audit:
 
 Bash
 python audit.py
-#📊 Sample Output
+## 📊 Sample Output
 If a user used a tool like GO-GREEN, the output will look like this:
 
 Plaintext
@@ -40,7 +40,8 @@ Plaintext
    Message: update data.json
 
 ❌ RESULT: THIS USER IS USING A FAKE COMMIT ADDON
-#⚖️ Limitations
+
+## ⚖️ Limitations
 Force Overrides: Sophisticated users can spoof both dates using advanced Git commands, though most "green square" scripts do not do this by default.
 
 Legitimate Gaps: Minor discrepancies can occur during a rebase or cherry-pick. This script uses a 1-hour threshold to avoid false positives.
