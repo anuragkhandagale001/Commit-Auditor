@@ -31,6 +31,16 @@ Configure the path in audit.py:
 repo_path = "./path-to-target-repo"
 ```
 
+Create the audit.py
+
+```Bash
+touch audit.py
+```
+
+```Bash
+vim audit.py
+```
+
 Run the audit:
 
 ```Bash
