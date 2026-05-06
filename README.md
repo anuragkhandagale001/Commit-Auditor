@@ -1,12 +1,12 @@
 # Commit-Auditor-Anti-Cheat-
 A Python-based security tool designed to detect fake GitHub contributions. It identifies repositories that have used automated scripts (like goGreen or contribution-gen) to manipulate the GitHub contribution graph by backdating commits.
 
-🚀 How it Works
+#🚀 How it Works
 GitHub contributions are based on the Author Date (when the user claims they wrote the code). However, Git also records a Committer Date (the actual system time when the commit was created).
 
 Most automation tools only spoof the Author Date. This script performs a Deep Metadata Audit by comparing these two timestamps. If a discrepancy of more than 1 hour is found, the commit is flagged as fraudulent.
 
-🛠️ Installation
+#🛠️ Installation
 Clone this auditor:
 
 Bash
@@ -17,7 +17,7 @@ This tool requires the GitPython library.
 
 Bash
 pip install GitPython
-📖 Usage
+#📖 Usage
 Clone the target repository you want to investigate into a local folder.
 
 Configure the path in audit.py:
@@ -28,7 +28,7 @@ Run the audit:
 
 Bash
 python audit.py
-📊 Sample Output
+#📊 Sample Output
 If a user used a tool like GO-GREEN, the output will look like this:
 
 Plaintext
@@ -40,7 +40,7 @@ Plaintext
    Message: update data.json
 
 ❌ RESULT: THIS USER IS USING A FAKE COMMIT ADDON
-⚖️ Limitations
+#⚖️ Limitations
 Force Overrides: Sophisticated users can spoof both dates using advanced Git commands, though most "green square" scripts do not do this by default.
 
 Legitimate Gaps: Minor discrepancies can occur during a rebase or cherry-pick. This script uses a 1-hour threshold to avoid false positives.
